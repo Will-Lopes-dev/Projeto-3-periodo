@@ -40,14 +40,14 @@ console.log(isAuth)
         <input className={styles.input} type="email" name="email" onChange={handleChange} placeholder="email" />
         <input className={styles.input} type="password" name="passwd" onChange={handleChange} placeholder="palavra-chave" />
         <p>{mensagens}</p>
-        <Link to="/register" style={{ textDecoration: 'none', marginTop: '5px' }}>
+        <Link to="/" style={{ textDecoration: 'none', marginTop: '5px' }}>
           Ainda não possui cadastro? Clique aqui!
         </Link>
         <button className={styles.button} onClick={handleClick} type="submit">
           Enviar
         </button>
 	{isAuth && (
-           <Navigate to="/" replace={true} />
+           <Navigate to="/jogo" replace={true} />
         )}
       </form>
     </section>
