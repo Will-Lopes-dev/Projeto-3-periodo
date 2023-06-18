@@ -24,7 +24,7 @@ export const registrarUsuário = (req, res) => {
 
   db.query(insertQuery, [values], (err, data) => {
     if(err) return res.json(err);
-    return res.status(209).json(`Usuário foi criado com sucesso`)
+    return res.status(209).json({ message: "usuario foi criado com sucesso" });
   })
 }
 

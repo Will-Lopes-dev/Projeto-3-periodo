@@ -9,7 +9,7 @@ export const MainRoutes = () => {
     return useRoutes([
         { path: '/', element: <Home /> },
         { path: '/login', element: <Login /> },
-        { path: '/Register', element: <Register /> },
+        { path: '/register', element: <Register /> },
         /* { path: '/Register', element: <NoFound /> } */
     ]);
 }
